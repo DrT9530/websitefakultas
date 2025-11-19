@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hubungi Kami — FMIPA UNTAN</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* Nav Active State */
+    .nav-root a.nav-item.active::after {
+      width: 60%;
+    }
+    
+    /* Style Input Form */
+    .form-input {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      background-color: #f9fafb;
+      transition: all 0.3s ease;
+    }
+    .form-input:focus {
+      outline: none;
+      border-color: #f2bf2b;
+      background-color: #fff;
+      box-shadow: 0 0 0 3px rgba(242, 191, 43, 0.2);
+    }
+    .btn-submit {
+      background: #0B2D39;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: transform 0.2s;
+    }
+    .btn-submit:hover {
+      transform: translateY(-2px);
+      background: #7A2E2E; /* Maroon saat hover */
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <header class="bg-yellow-400 sticky top-0 z-50 shadow-md" role="banner">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center h-20">
+
+        <a href="index.html" class="flex items-center gap-4 text-decoration-none">
+          <img src="material/logo_untan.png" alt="Logo UNTAN" class="h-20 md:h-24 w-auto object-contain">
+          <div class="ml-2 hidden md:block">
+            <div class="text-4xl md:text-5xl font-bold text-[#0B2D39] leading-tight">FMIPA UNTAN</div>
+            <div class="text-base italic text-[#0B2D39]/80">Quality is our concern</div>
+          </div>
+        </a>
+
+        <div class="flex-1"></div>
+
+        <nav class="hidden md:flex items-center gap-8 text-[#0B2D39] nav-root">
+          <a class="nav-item" href="index.html">Beranda</a>
+          <a class="nav-item" href="tentang.html">Tentang</a>
+          <a class="nav-item" href="prodi.html">Program Studi</a>
+          <a class="nav-item" href="berita.html">Berita</a>
+          
+          <a class="nav-item active" href="kontak.html">Kontak</a>
+        </nav>
+
+        <button id="btnMobile" class="md:hidden p-2 ml-4">
+          <svg class="w-8 h-8 text-[#0B2D39]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden bg-yellow-300 md:hidden border-t border-yellow-500">
+        <div class="px-6 py-4 space-y-3 font-semibold text-[#0B2D39]">
+            <a href="index.html" class="block">Beranda</a>
+            <a href="tentang.html" class="block">Tentang</a>
+            <a href="prodi.html" class="block">Program Studi</a>
+            <a href="berita.html" class="block">Berita</a>
+            <a href="kontak.html" class="block text-[#7A2E2E]">Kontak</a>
+        </div>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    
+    <section class="bg-[#0B2D39] text-white py-16 relative overflow-hidden">
+        <div class="absolute right-0 bottom-0 opacity-10">
+            <svg width="300" height="300" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold font-serif mb-4">Hubungi Kami</h1>
+            <p class="text-yellow-400 text-lg">Kami siap melayani pertanyaan dan masukan Anda.</p>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            
+            <div>
+                <h2 class="text-3xl font-bold text-[#0B2D39] mb-6">Informasi Kontak</h2>
+                <p class="text-gray-600 mb-8 leading-relaxed">
+                    Jika Anda memiliki pertanyaan seputar akademik, kerjasama, atau layanan lainnya, silakan hubungi kami melalui kontak di bawah ini atau datang langsung ke kampus FMIPA UNTAN.
+                </p>
+
+                <div class="space-y-6 mb-10">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center text-2xl flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#0B2D39]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0L6.343 16.657a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-[#0B2D39]">Alamat Kampus</h4>
+                            <p class="text-gray-600 text-sm mt-1">JL. Prof. Dr. H. Hadari Nawawi, Pontianak, Kalimantan Barat – 78124</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-2xl flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#0B2D39]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-[#0B2D39]">Telepon & Email</h4>
+                            <p class="text-gray-600 text-sm mt-1">(0561) 577963</p>
+                            <p class="text-yellow-600 text-sm font-medium hover:underline"><a href="mailto:info@fmipa.untan.ac.id">info@fmipa.untan.ac.id</a></p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center text-2xl flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#0B2D39]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-[#0B2D39]">Jam Operasional</h4>
+                            <p class="text-gray-600 text-sm mt-1">Senin – Jumat: 07.30 – 16.00 WIB</p>
+                            <p class="text-gray-400 text-xs">(Sabtu, Minggu & Hari Libur Nasional Tutup)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-xl overflow-hidden shadow-lg border-2 border-gray-100 h-64 lg:h-80">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15959.04343668402!2d109.345159!3d-0.058269!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d599bd43605f1%3A0x533c860224e39150!2sFakultas%20Matematika%20dan%20Ilmu%20Pengetahuan%20Alam%20Universitas%20Tanjungpura!5e0!3m2!1sid!2sid!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 md:p-10 rounded-2xl shadow-xl border-t-8 border-yellow-400">
+                <h3 class="text-2xl font-bold text-[#0B2D39] mb-6">Kirim Pesan</h3>
+                <form action="#" method="POST" class="space-y-5">
+                    
+                    <div>
+                        <label for="nama" class="block text-sm font-semibold text-gray-700 mb-2">Nama Lengkap</label>
+                        <input type="text" id="nama" name="nama" class="form-input" placeholder="Masukkan nama Anda" required>
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Alamat Email</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="contoh@email.com" required>
+                    </div>
+
+                    <div>
+                        <label for="subject" class="block text-sm font-semibold text-gray-700 mb-2">Subjek Pesan</label>
+                        <select id="subject" name="subject" class="form-input">
+                            <option value="">Pilih Subjek...</option>
+                            <option value="akademik">Layanan Akademik</option>
+                            <option value="kerjasama">Kerjasama / Humas</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="pesan" class="block text-sm font-semibold text-gray-700 mb-2">Isi Pesan</label>
+                        <textarea id="pesan" name="pesan" rows="5" class="form-input" placeholder="Tuliskan pesan atau pertanyaan Anda di sini..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit w-full shadow-lg">Kirim Pesan Sekarang →</button>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+  </main>
+
+  <footer id="kontak-footer" class="dark-footer mt-0">
+    <div class="w-full max-w-[95%] mx-auto px-6 md:px-12 py-12">
+      <div class="footer-grid">
+        <div class="footer-left">
+          <div class="logo-container mb-6 inline-block bg-white py-2 px-4 rounded-full">
+             <img src="material/logo_untan.png" alt="Logo FMIPA UNTAN" class="h-12 w-auto object-contain">
+          </div>
+          <div class="contact-info space-y-3 text-sm">
+            <p class="leading-relaxed text-gray-400">JL. Prof. Dr. H. Hadari Nawawi – Kode Pos: 78124</p>
+            <div class="flex items-center gap-3 text-gray-300"><span class="text-yellow-400">📞</span> <span>(0561) 577963</span></div>
+            <div class="flex items-center gap-3 text-gray-300"><span class="text-yellow-400">✉️</span> <a href="mailto:info@fmipa.untan.ac.id" class="hover:text-white">info@fmipa.untan.ac.id</a></div>
+            <div class="flex items-center gap-3 text-gray-300"><span class="text-yellow-400">🌐</span> <a href="https://mipa.untan.ac.id" class="hover:text-white">mipa.untan.ac.id</a></div>
+          </div>
+          <div class="socials mt-6 flex gap-3">
+             <a href="#" aria-label="Twitter"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+             <a href="#" aria-label="Instagram"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+             <a href="#" aria-label="Youtube"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#fff"></polygon></svg></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4 class="flex items-center gap-2 text-lg font-semibold text-white mb-6"><span class="text-yellow-400">🔗</span> Link Terkait</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="#" class="hover:text-yellow-400 transition-colors">Universitas Tanjungpura</a></li>
+            <li><a href="#" class="hover:text-yellow-400 transition-colors">Website Jurusan Biologi</a></li>
+            <li><a href="#" class="hover:text-yellow-400 transition-colors">Website Jurusan Kimia</a></li>
+            <li><a href="#" class="hover:text-yellow-400 transition-colors">Website Prodi Matematika</a></li>
+          </ul>
+        </div>
+        <div class="footer-map">
+          <h4 class="flex items-center gap-2 text-lg font-semibold text-white mb-6"><span class="text-yellow-400">📍</span> Peta Lokasi Fakultas MIPA</h4>
+          <div class="map-wrap rounded-lg overflow-hidden border-2 border-gray-700">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15959.04343668402!2d109.345159!3d-0.058269!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d599bd43605f1%3A0x533c860224e39150!2sFakultas%20Matematika%20dan%20Ilmu%20Pengetahuan%20Alam%20Universitas%20Tanjungpura!5e0!3m2!1sid!2sid!4v1700000000000" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div> 
+    </div> 
+    <div class="bg-[#131419] py-4 border-t border-gray-800">
+      <div class="w-full max-w-[95%] mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+         <div>© <span id="year"></span> FMIPA UNTAN. All rights reserved.</div>
+         <div class="mt-2 md:mt-0 space-x-4">
+           <a href="#" class="hover:text-white">Sitemap</a>
+           <a href="#" class="hover:text-white">Kebijakan Privasi</a>
+         </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
