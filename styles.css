@@ -337,16 +337,28 @@ header, .max-w-7xl, .header-inner {
   font-size: 0.95rem;
 }
 
+/* ========================
+   UPDATE BAGIAN INI DI CSS
+   ======================== */
+
 .footer-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 40px;
+  gap: 60px; /* Jarak dasar diperbesar */
 }
 
-/* Responsif Grid: 3 Kolom di desktop */
+/* Responsif Grid: Desktop */
 @media (min-width: 900px) {
   .footer-grid {
-    grid-template-columns: 1.2fr 1fr 1.3fr; /* Kiri sedikit lebih lebar, Peta paling lebar */
+    /* Mengatur proporsi kolom: 
+       - Kiri (Kontak): 1 bagian
+       - Tengah (Link): 1 bagian
+       - Kanan (Peta): 1.5 bagian (lebih lebar dikit) 
+    */
+    grid-template-columns: 1fr 1fr 1.5fr; 
+    
+    /* INI KUNCINYA: */
+    gap: 120px; /* Memberi jarak yang SANGAT LEBAR antar kolom */
     align-items: start;
   }
 }
