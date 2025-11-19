@@ -194,54 +194,63 @@
 </section>
 
 <!-- ===== News Carousel (ganti section Berita lama) ===== -->
-<section id="berita" class="news-section">
+<section id="berita" class="py-20 bg-gray-50 news-section">
   <div class="max-w-7xl mx-auto px-6 news-container">
 
     <div class="flex items-center justify-between mb-8">
       <h2 class="text-3xl font-semibold text-[#0B2D39]">Berita Terkini</h2>
-      <a href="#more" class="text-sm text-blue-700 hover:underline">Selengkapnya →</a>
+      <a href="berita.html" class="text-sm text-blue-700 hover:underline">Selengkapnya →</a>
     </div>
 
-    <!-- news carousel wrapper -->
-<div class="news-wrapper overflow-hidden relative"> 
+    <div class="news-wrapper overflow-hidden relative"> 
 
-  <!-- TRACK: semua card berada di sini -->
-  <div class="news-track flex gap-6">
-    <!-- NEWS 1 -->
-    <div class="bg-white rounded-xl shadow p-6 w-[360px] flex-shrink-0">
-      <img src="material/berita_innov.jpeg" class="w-full h-40 object-cover rounded"/>
-      <h3 class="font-semibold mt-4">Sistem Informasi Innovation Day 2025: Kolaborasi Mahasiswa dan Industri dalam Mengembangkan Solusi Teknologi</h3>
-      <p class="text-sm text-gray-500 mt-1">15/05/2025</p>
-      <p class="text-sm mt-3">Pontianak, 15 Mei 2025 - Jurusan Sistem Info... </p>
-    </div>
+      <div class="news-track flex gap-6">
+        
+        <div class="news-card min-w-full md:min-w-[48%] lg:min-w-[31.5%] bg-white rounded-xl shadow p-6 flex-shrink-0">
+          <img src="material/berita_innov.jpeg" class="w-full h-40 object-cover rounded"/>
+          <h3 class="font-semibold mt-4 text-[#0B2D39]">Sistem Informasi Innovation Day 2025: Kolaborasi Mahasiswa dan Industri</h3>
+          <p class="text-sm text-gray-500 mt-1">15/05/2025</p>
+          <p class="text-sm mt-3 text-gray-600 line-clamp-3">Pontianak, 15 Mei 2025 - Jurusan Sistem Informasi sukses menggelar Innovation Day...</p>
+        </div>
 
-    <!-- NEWS 2 -->
-    <div class="bg-white rounded-xl shadow p-6 w-[360px] flex-shrink-0">
-      <img src="material/berita_dnsuntan.jpeg" class="w-full h-40 object-cover rounded"/>
-      <h3 class="font-semibold mt-4">66 tahun perjalanan Universitas Tanjungpura</h3>
-      <p class="text-sm text-gray-500 mt-1">25/05/2025</p>
-      <p class="text-sm mt-3">66 tahun perjalanan Universitas Tanjungpura terus ...</p>
-    </div>
+        <div class="news-card min-w-full md:min-w-[48%] lg:min-w-[31.5%] bg-white rounded-xl shadow p-6 flex-shrink-0">
+          <img src="material/berita_dnsuntan.jpeg" class="w-full h-40 object-cover rounded"/>
+          <h3 class="font-semibold mt-4 text-[#0B2D39]">66 tahun perjalanan Universitas Tanjungpura</h3>
+          <p class="text-sm text-gray-500 mt-1">25/05/2025</p>
+          <p class="text-sm mt-3 text-gray-600 line-clamp-3">66 tahun perjalanan Universitas Tanjungpura terus berkarya membangun negeri...</p>
+        </div>
 
-    <!-- NEWS 3 -->
-    <div class="bg-white rounded-xl shadow p-6 w-[360px] flex-shrink-0">
-      <img src="material/berita_mapres.jpeg" class="w-full h-40 object-cover rounded"/>
-      <h3 class="font-semibold mt-4">Pemilihan Mahasiswa Berprestasi</h3>
-      <p class="text-sm text-gray-500 mt-1">03/07/2025</p>
-      <p class="text-sm mt-3">Pontianak, Mei 2025 – Fakultas Matematika da...</p>
-    </div>
-  </div> <!-- /.news-track -->
+        <div class="news-card min-w-full md:min-w-[48%] lg:min-w-[31.5%] bg-white rounded-xl shadow p-6 flex-shrink-0">
+          <img src="material/berita_mapres.jpeg" class="w-full h-40 object-cover rounded"/>
+          <h3 class="font-semibold mt-4 text-[#0B2D39]">Pemilihan Mahasiswa Berprestasi</h3>
+          <p class="text-sm text-gray-500 mt-1">03/07/2025</p>
+          <p class="text-sm mt-3 text-gray-600 line-clamp-3">Pontianak, Mei 2025 – Fakultas Matematika dan Ilmu Pengetahuan Alam...</p>
+        </div>
+        
+        <div class="news-card min-w-full md:min-w-[48%] lg:min-w-[31.5%] bg-white rounded-xl shadow p-6 flex-shrink-0">
+          <img src="material/berita_kulum.jpeg" class="w-full h-40 object-cover rounded"/>
+          <h3 class="font-semibold mt-4 text-[#0B2D39]">Kuliah Umum Prodi Fisika “Pe...</h3>
+          <p class="text-sm text-gray-500 mt-1">25/08/2025</p>
+          <p class="text-sm mt-3 text-gray-600 line-clamp-3">Program Studi Fisika FMIPA Universitas Tanjungpura...</p>
+        </div>
 
-  <!-- DOTS: harus berada di SINI, sibling dari .news-track -->
-  <div class="news-dots" aria-hidden="false"></div>
+        <div class="news-card min-w-full md:min-w-[48%] lg:min-w-[31.5%] bg-white rounded-xl shadow p-6 flex-shrink-0">
+          <img src="material/kampusasri.jpeg" class="w-full h-40 object-cover rounded"/>
+          <h3 class="font-semibold mt-4 text-[#0B2D39]">Wujudkan Kampus Asri, FMIPA Un...</h3>
+          <p class="text-sm text-gray-500 mt-1">10/08/2025</p>
+          <p class="text-sm mt-3 text-gray-600 line-clamp-3">Pontianak — Dalam upaya mendukung pelestaria...</p>
+        </div>
 
-</div> <!-- /.news-wrapper -->
+        <div class="news-card min-w-full md:min-w-[48%] lg:min-w-[31.5%] bg-white rounded-xl shadow p-6 flex-shrink-0">
+          <img src="material/berita_syukuran.jpeg" class="w-full h-40 object-cover rounded"/>
+          <h3 class="font-semibold mt-4 text-[#0B2D39]">kegiatan Syukuran dan Ramah Ta...</h3>
+          <p class="text-sm text-gray-500 mt-1">11/07/2025</p>
+          <p class="text-sm mt-3 text-gray-600 line-clamp-3">Kepada seluruh Civitas Akademika FMIPA UNTAN, S...</p>
+        </div>
 
+      </div> <div class="news-dots flex justify-center gap-3 mt-8" aria-hidden="false"></div>
 
-      </div>
-    </div>
-
-  </div>
+    </div> </div>
 </section>
 
 
@@ -334,5 +343,142 @@
 </footer>
 
 <!-- back-to-top button (tambahkan di akhir body) -->
+ <script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  // === 1. LOGIKA MENU MOBILE ===
+  const mobileBtn = document.getElementById('btnMobile');
+  const mobileMenu = document.getElementById('mobileMenu');
+  if (mobileBtn && mobileMenu) {
+    mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+  }
+
+  // === 2. LOGIKA DROPDOWN ===
+  const dropdowns = document.querySelectorAll('.nav-dropdown');
+  dropdowns.forEach(dd => {
+    let timer;
+    dd.addEventListener('mouseenter', () => {
+      clearTimeout(timer);
+      dd.classList.add('open');
+      dd.setAttribute('aria-expanded', 'true');
+    });
+    dd.addEventListener('mouseleave', () => {
+      timer = setTimeout(() => {
+        dd.classList.remove('open');
+        dd.setAttribute('aria-expanded', 'false');
+      }, 200);
+    });
+  });
+
+  // === 3. LOGIKA CAROUSEL BERITA (SLIDER) ===
+  initNewsCarousel();
+
+  function initNewsCarousel() {
+    const track = document.querySelector('.news-track');
+    const dotsContainer = document.querySelector('.news-dots');
+    
+    // Cek apakah elemen ada
+    if (!track || !dotsContainer) return;
+
+    const slides = Array.from(track.children);
+    if (slides.length === 0) return;
+
+    let index = 0;
+    let interval;
+    const gap = 24; // Sesuaikan dengan gap-6 di CSS (24px)
+
+    // Tentukan berapa slide yang muncul di layar
+    function getSlidesPerView() {
+      if (window.innerWidth >= 1024) return 3; // Desktop: 3 slide
+      if (window.innerWidth >= 768) return 2;  // Tablet: 2 slide
+      return 1;                                // HP: 1 slide
+    }
+
+    function setup() {
+      const slidesPerView = getSlidesPerView();
+      const totalSlides = slides.length;
+      
+      // Hitung jumlah titik yang dibutuhkan
+      // Rumus: Total Slide - Yang Tampil + 1
+      let totalDots = totalSlides - slidesPerView + 1;
+      if (totalDots < 1) totalDots = 1;
+
+      // Reset titik lama
+      dotsContainer.innerHTML = '';
+
+      // Buat titik baru
+      for (let i = 0; i < totalDots; i++) {
+        const dot = document.createElement('button');
+        dot.className = i === 0 ? 'dot active' : 'dot'; // Titik pertama aktif
+        dot.ariaLabel = `Slide ke ${i + 1}`;
+        
+        // Saat titik diklik
+        dot.addEventListener('click', () => {
+          index = i;
+          updateCarousel();
+          resetTimer(); // Reset auto-play biar tidak bentrok
+        });
+        
+        dotsContainer.appendChild(dot);
+      }
+      
+      // Pastikan posisi awal benar
+      updateCarousel();
+    }
+
+    function updateCarousel() {
+      const slidesPerView = getSlidesPerView();
+      
+      // Ambil lebar satu kartu (termasuk padding/border jika ada)
+      const slideWidth = slides[0].getBoundingClientRect().width;
+      
+      // Hitung jarak geser (Lebar Kartu + Jarak Gap)
+      const amountToMove = index * (slideWidth + gap);
+      
+      // Geser Track
+      track.style.transform = `translateX(-${amountToMove}px)`;
+      
+      // Update warna titik
+      const dots = Array.from(dotsContainer.children);
+      dots.forEach((d, i) => {
+        d.classList.toggle('active', i === index);
+      });
+    }
+
+    // --- Auto Play (Opsional) ---
+    function startTimer() {
+      interval = setInterval(() => {
+        const slidesPerView = getSlidesPerView();
+        const maxIndex = slides.length - slidesPerView; // Batas akhir geser
+        
+        if (index < maxIndex) {
+          index++;
+        } else {
+          index = 0; // Balik ke awal
+        }
+        updateCarousel();
+      }, 5000); // Geser setiap 5 detik
+    }
+
+    function resetTimer() {
+      clearInterval(interval);
+      startTimer();
+    }
+
+    // Jalankan fungsi utama
+    setup();
+    startTimer();
+
+    // Update saat layar diubah ukurannya (resize)
+    window.addEventListener('resize', () => {
+      index = 0; // Reset ke awal agar rapi
+      setup();
+    });
+  }
+
+});
+</script>
+
+</body> 
 </body>
 </html>

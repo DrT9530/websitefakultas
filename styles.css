@@ -417,3 +417,30 @@ header, .max-w-7xl, .header-inner {
 .nav-root .nav-item.active::after {
   width: 60%; /* Lebarnya disamakan dengan efek hover */
 }
+/* --- CSS CAROUSEL BERITA --- */
+
+.news-wrapper {
+  overflow: hidden; /* Menyembunyikan kartu yang meluber ke kanan */
+  width: 100%;
+}
+
+.news-track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1); /* Animasi geser halus */
+  width: 100%;
+}
+
+/* Styling Dot Navigasi */
+.news-dots .dot {
+  width: 12px;
+  height: 12px;
+  background-color: #e5e7eb; /* Abu-abu */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.news-dots .dot.active {
+  background-color: #0B2D39; /* Biru saat aktif */
+  transform: scale(1.3);     /* Membesar sedikit */
+}
