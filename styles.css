@@ -348,17 +348,11 @@ header, .max-w-7xl, .header-inner {
 }
 
 /* Responsif Grid: Desktop */
+/* Cek ulang bagian ini di styles.css */
 @media (min-width: 900px) {
   .footer-grid {
-    /* Mengatur proporsi kolom: 
-       - Kiri (Kontak): 1 bagian
-       - Tengah (Link): 1 bagian
-       - Kanan (Peta): 1.5 bagian (lebih lebar dikit) 
-    */
-    grid-template-columns: 1fr 1fr 1.5fr; 
-    
-    /* INI KUNCINYA: */
-    gap: 120px; /* Memberi jarak yang SANGAT LEBAR antar kolom */
+    grid-template-columns: 1fr 1fr 1.5fr;
+    gap: 120px; /* Pastikan gap-nya besar agar tidak mepet */
     align-items: start;
   }
 }
