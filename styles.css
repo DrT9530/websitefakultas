@@ -410,3 +410,10 @@ header, .max-w-7xl, .header-inner {
 .map-wrap {
   box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
+
+/* --- Tambahkan kode ini di styles.css --- */
+
+/* Agar garis bawah menetap pada menu yang sedang aktif */
+.nav-root .nav-item.active::after {
+  width: 60%; /* Lebarnya disamakan dengan efek hover */
+}

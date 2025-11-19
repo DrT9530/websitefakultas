@@ -13,70 +13,72 @@
 
   <!-- Custom styles -->
   <link rel="stylesheet" href="styles.css" />
+  
+  <style>
+    /* Agar menu yang sedang aktif garis bawahnya tetap muncul */
+    .nav-root a.nav-item.active::after {
+      width: 60%;
+    }
+  </style>
+</head>
 </head>
 <body class="bg-gray-50 text-gray-900">
 
   <!-- HEADER / NAV -->
-  <header class="bg-yellow-400" role="banner">
+  <header class="bg-yellow-400 sticky top-0 z-50 shadow-md" role="banner">
   <div class="max-w-7xl mx-auto px-6">
-    <!-- container utama header -->
     <div class="flex items-center h-20">
 
-      <!-- KIRI: logo + teks (tidak tumbuh) -->
-      <div class="flex items-center gap-4">
-        <img src="material/logo_untan.png" alt="Logo UNTAN" class="h-20 md:h-24 w-auto object-contain">
-
-        <div class="ml-2">
-          <div class="text-4xl md:text-5xl font-bold text-[#0B2D39] leading-tight">FMIPA UNTAN</div>
-          <div class="text-base italic text-[#0B2D39]/80">Quality is our concern</div>
+      <a href="index.html" class="flex items-center gap-4 text-decoration-none">
+        <img src="material/logo_untan.png" alt="Logo UNTAN" class="h-14 md:h-16 w-auto object-contain">
+        <div class="ml-2 hidden md:block">
+          <div class="text-3xl font-bold text-[#0B2D39] leading-tight">FMIPA UNTAN</div>
+          <div class="text-sm italic text-[#0B2D39]/80">Quality is our concern</div>
         </div>
-      </div>
+      </a>
 
-      <!-- PISAHER / spacer: bantu dorong nav ke kanan -->
       <div class="flex-1"></div>
 
-      <!-- KANAN: nav (desktop) -->
-      <!-- ===== NAV (ganti nav lama dengan ini) ===== -->
-<nav class="hidden md:flex items-center gap-8 text-[#0B2D39] nav-root">
-  <a class="nav-item" href="#about">Tentang</a>
+      <nav class="hidden md:flex items-center gap-8 text-[#0B2D39] nav-root">
+        
+        <a class="nav-item active" href="index.html">Beranda</a>
 
-  <!-- Program Studi: parent dropdown (PASTIKAN struktur sama) -->
-  <div class="nav-item nav-dropdown" tabindex="0" aria-haspopup="true" aria-expanded="false">
-    <button class="nav-link-btn" type="button">Program Studi</button>
+        <a class="nav-item" href="tentang.html">Tentang</a>
 
-    <!-- dropdown panel (isi link sesuai kebutuhan) -->
-    <div class="dropdown-panel" role="menu" aria-label="Program Studi">
-      <a href="#prodi-s1" role="menuitem">Program Sarjana</a>
-      <a href="#prodi-s2" role="menuitem">Program Magister</a>
-      <a href="#prodi-s3" role="menuitem">Program Doktor</a>
-      <a href="#prodi-prof" role="menuitem">Program Profesi &amp; Sertifikasi</a>
-      <a href="#prodi-celeb" role="menuitem">Center for Education &amp; Learning (CELEB)</a>
-      <a href="#prodi-summer" role="menuitem">Program Musim Panas (Summer School)</a>
-    </div>
-  </div>
+        <a class="nav-item" href="prodi.html">Program Studi</a>
+        
+        <div class="nav-item nav-dropdown" tabindex="0" aria-haspopup="true" aria-expanded="false">
+          <button class="nav-link-btn" type="button">Program Studi</button>
+          <div class="dropdown-panel" role="menu" aria-label="Program Studi">
+            <a href="#prodi-s1" role="menuitem">Program Sarjana</a>
+            <a href="#prodi-s2" role="menuitem">Program Magister</a>
+            <a href="#prodi-s3" role="menuitem">Program Doktor</a>
+            <a href="#prodi-prof" role="menuitem">Program Profesi & Sertifikasi</a>
+            <a href="#prodi-celeb" role="menuitem">Center for Education & Learning (CELEB)</a>
+            <a href="#prodi-summer" role="menuitem">Program Musim Panas (Summer School)</a>
+          </div>
+        </div>
 
-  <a class="nav-item" href="#kontak">Kontak</a>
-  <a class="nav-item" href="#berita">Berita</a>
-</nav>
+        <a class="nav-item" href="#berita">Berita</a>
 
+        <a class="nav-item" href="#kontak">Kontak</a>
+      </nav>
 
-      <!-- tombol mobile (akan muncul di kanan) -->
-      <button id="btnMobile" class="md:hidden p-2 rounded focus:outline-none ml-4" aria-label="Buka menu">
-        <svg class="w-6 h-6 text-[#0B2D39]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"/>
+      <button id="btnMobile" class="md:hidden p-2 ml-4">
+        <svg class="w-8 h-8 text-[#0B2D39]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
       </button>
     </div>
   </div>
 
-  <!-- mobile dropdown -->
-  <div id="mobileMenu" class="md:hidden hidden bg-yellow-300/80">
-    <div class="px-6 pb-4 space-y-2">
-      <a href="#about" class="block py-2">Tentang</a>
-      <a href="#prodi" class="block py-2">Program Studi</a>
-      <a href="#kontak" class="block py-2">Kontak</a>
-      <a href="#berita" class="block py-2">Berita</a>
+  <div id="mobileMenu" class="hidden bg-yellow-300 md:hidden border-t border-yellow-500">
+    <div class="px-6 py-4 space-y-3 font-semibold text-[#0B2D39]">
+      <a href="index.html" class="block">Beranda</a>
+      <a href="tentang.html" class="block">Tentang</a>
+      <a href="#" class="block">Program Studi</a>
+      <a href="#berita" class="block">Berita</a>
+      <a href="#kontak" class="block">Kontak</a>
     </div>
   </div>
 </header>
@@ -101,77 +103,104 @@
       </div>
     </section>
 
-   <section id="sambutan" class="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-2 gap-16">
-
-  <!-- KIRI: Sambutan -->
-  <div>
+   <section id="sambutan" class="max-w-7xl mx-auto px-6 py-20">
+  
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+    
+    <div class="lg:col-span-7">
       <h2 class="text-3xl md:text-4xl font-bold text-[#0B2D39] flex items-center gap-3">
-          <span class="inline-block w-6 h-6">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke-width="2" stroke="#0B2D39">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                      d="M3 12h3l3 8 4-16 3 8h5" />
-              </svg>
-          </span>
+          <span class="inline-block w-1.5 h-8 bg-yellow-400 rounded-full"></span>
           Sambutan Dekan FMIPA
       </h2>
-
-      <div class="h-1 w-24 bg-yellow-400 rounded mt-3 mb-8"></div>
-
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-          <p class="italic text-gray-600 mb-6">
+      
+      <div class="mt-6 prose prose-lg text-gray-600 leading-relaxed text-justify">
+          <p class="font-medium text-[#0B2D39] italic">
               Assalaamu’alaikum wr. wb.
           </p>
-
           <p>
               Selamat datang di website resmi Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Tanjungpura (FMIPA UNTAN). 
-              Kami berkomitmen untuk menyediakan layanan akademik, penelitian, dan pengabdian masyarakat yang berkualitas, 
-              relevan, dan berdaya saing global.
+              Kami berkomitmen untuk menyediakan layanan akademik, penelitian, dan pengabdian masyarakat yang berkualitas.
           </p>
-
           <p>
               FMIPA UNTAN saat ini menyelenggarakan sembilan program studi jenjang S-1 dan satu program studi jenjang S-2. 
               Dengan dukungan tenaga pendidik profesional serta fasilitas laboratorium yang memadai, 
-              kami terus meningkatkan kualitas pendidikan untuk menghasilkan lulusan yang kompeten dan unggul.
+              kami terus meningkatkan kualitas pendidikan.
           </p>
-
-          <div class="bg-yellow-50 border-l-4 border-yellow-400 p-5 my-8 rounded">
-              <p class="font-semibold text-[#0B2D39] mb-2">Visi FMIPA UNTAN:</p>
-              <p class="italic">
+          
+          <div class="bg-yellow-50 border-l-4 border-yellow-400 p-5 my-6 rounded-r-lg">
+              <p class="text-sm font-bold text-[#0B2D39] uppercase tracking-wider mb-1">Visi FMIPA UNTAN</p>
+              <p class="italic text-gray-700">
                 “Menjadi institusi unggul dalam transformasi, pengembangan dan penyebarluasan sains dan teknologi 
                 berbasis lingkungan tropis dengan luaran berdaya saing global.”
               </p>
           </div>
 
           <p>
-              Dengan semangat inovasi dan kolaborasi, FMIPA UNTAN terus meningkatkan kualitas layanan akademik dan kontribusi 
-              terhadap pengembangan ilmu pengetahuan di Indonesia.
+              Dengan semangat inovasi dan kolaborasi, FMIPA UNTAN terus meningkatkan kualitas layanan akademik.
           </p>
-
-          <p class="italic text-gray-600 mt-6">
+          <p class="font-medium text-[#0B2D39] mt-4">
               Wassalaamu’alaikum wr. wb.
           </p>
       </div>
+    </div>
+
+    <div class="lg:col-span-5 relative mt-8 lg:mt-0">
+      <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white transform rotate-1 hover:rotate-0 transition duration-500">
+        <img src="material/dekan-removebg-preview.png" 
+             alt="Dekan FMIPA" 
+             class="w-full h-auto object-cover">
+        
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0B2D39] to-transparent p-6 pt-12 text-white">
+          <div class="font-bold text-xl">Prof. Dr. Gusrizal, S.Si., M.Si.</div>
+          <div class="text-yellow-400 text-sm">Dekan Fakultas MIPA</div>
+        </div>
+      </div>
+      
+      <div class="absolute -z-10 top-[-20px] right-[-20px] text-yellow-400 opacity-50">
+        <svg width="100" height="100" fill="currentColor" viewBox="0 0 100 100">
+          <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+            <circle cx="2" cy="2" r="2"></circle>
+          </pattern>
+          <rect width="100" height="100" fill="url(#dots)"></rect>
+        </svg>
+      </div>
+    </div>
+
   </div>
 
-  <!-- KANAN: Statistik -->
-  <div class="grid grid-cols-2 gap-6">
-      <div class="stat-card">
-          <div class="stat-number">2.479</div>
-          <div class="stat-label">Mahasiswa Aktif</div>
-      </div>
+  <div class="mt-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="bg-white border border-gray-100 p-6 rounded-xl shadow-lg flex items-center gap-4 hover:-translate-y-1 transition-transform duration-300">
+            <div class="w-14 h-14 rounded-full bg-yellow-100 flex items-center justify-center text-2xl">
+              🎓 </div>
+            <div>
+                <div class="text-3xl font-bold text-[#0B2D39]">2.479</div>
+                <div class="text-sm text-gray-500 font-medium uppercase tracking-wide">Mahasiswa Aktif</div>
+            </div>
+        </div>
 
-      <div class="stat-card">
-          <div class="stat-number">10</div>
-          <div class="stat-label">Program Studi</div>
-      </div>
+        <div class="bg-white border border-gray-100 p-6 rounded-xl shadow-lg flex items-center gap-4 hover:-translate-y-1 transition-transform duration-300">
+            <div class="w-14 h-14 rounded-full bg-yellow-100 flex items-center justify-center text-2xl">
+              🏫
+            </div>
+            <div>
+                <div class="text-3xl font-bold text-[#0B2D39]">10</div>
+                <div class="text-sm text-gray-500 font-medium uppercase tracking-wide">Program Studi</div>
+            </div>
+        </div>
 
-      <div class="stat-card">
-          <div class="stat-number">119</div>
-          <div class="stat-label">Dosen</div>
-      </div>
+        <div class="bg-white border border-gray-100 p-6 rounded-xl shadow-lg flex items-center gap-4 hover:-translate-y-1 transition-transform duration-300">
+            <div class="w-14 h-14 rounded-full bg-yellow-100 flex items-center justify-center text-2xl">
+              👨‍🏫
+            </div>
+            <div>
+                <div class="text-3xl font-bold text-[#0B2D39]">119</div>
+                <div class="text-sm text-gray-500 font-medium uppercase tracking-wide">Dosen & Staff</div>
+            </div>
+        </div>
 
-      </div>
+    </div>
   </div>
 
 </section>
@@ -317,7 +346,5 @@
 </footer>
 
 <!-- back-to-top button (tambahkan di akhir body) -->
-<button id="btnTop" aria-label="Back to top">↑</button>
-
 </body>
 </html>

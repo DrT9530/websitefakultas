@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tentang Kami — FMIPA UNTAN</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- HEADER / NAV -->
+  <header class="bg-yellow-400 sticky top-0 z-50 shadow-md" role="banner">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-center h-20">
+
+      <a href="index.html" class="flex items-center gap-4 text-decoration-none">
+        <img src="material/logo_untan.png" alt="Logo UNTAN" class="h-14 md:h-16 w-auto object-contain">
+        <div class="ml-2 hidden md:block">
+          <div class="text-3xl font-bold text-[#0B2D39] leading-tight">FMIPA UNTAN</div>
+          <div class="text-sm italic text-[#0B2D39]/80">Quality is our concern</div>
+        </div>
+      </a>
+
+      <div class="flex-1"></div>
+
+      <nav class="hidden md:flex items-center gap-8 text-[#0B2D39] nav-root">
+        
+        <a class="nav-item" href="index.html">Beranda</a>
+
+        <a class="nav-item active" href="tentang.html">Tentang</a>
+
+        <a class="nav-item" href="prodi.html">Program Studi</a>
+        <div class="nav-item nav-dropdown" tabindex="0" aria-haspopup="true" aria-expanded="false">
+          <button class="nav-link-btn" type="button">Program Studi</button>
+          <div class="dropdown-panel" role="menu" aria-label="Program Studi">
+            <a href="#prodi-s1" role="menuitem">Program Sarjana</a>
+            <a href="#prodi-s2" role="menuitem">Program Magister</a>
+            <a href="#prodi-s3" role="menuitem">Program Doktor</a>
+            <a href="#prodi-prof" role="menuitem">Program Profesi & Sertifikasi</a>
+            <a href="#prodi-celeb" role="menuitem">Center for Education & Learning (CELEB)</a>
+            <a href="#prodi-summer" role="menuitem">Program Musim Panas (Summer School)</a>
+          </div>
+        </div>
+
+        <a class="nav-item" href="#berita">Berita</a>
+
+        <a class="nav-item" href="#kontak">Kontak</a>
+      </nav>
+
+      <button id="btnMobile" class="md:hidden p-2 ml-4">
+        <svg class="w-8 h-8 text-[#0B2D39]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobileMenu" class="hidden bg-yellow-300 md:hidden border-t border-yellow-500">
+    <div class="px-6 py-4 space-y-3 font-semibold text-[#0B2D39]">
+      <a href="index.html" class="block">Beranda</a>
+      <a href="tentang.html" class="block">Tentang</a>
+      <a href="#" class="block">Program Studi</a>
+      <a href="#berita" class="block">Berita</a>
+      <a href="#kontak" class="block">Kontak</a>
+    </div>
+  </div>
+</header>
+
+  <main>
+    <section class="bg-[#0B2D39] text-white py-16 relative overflow-hidden">
+        <div class="absolute top-0 right-0 opacity-10 transform translate-x-1/3 -translate-y-1/3">
+            <img src="material/logo_untan.png" class="w-96 h-96" alt="bg-decor">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold font-serif mb-4">Tentang Fakultas</h1>
+            <div class="flex justify-center gap-2 text-sm text-yellow-400 uppercase tracking-widest">
+                <a href="index.html" class="hover:text-white">Beranda</a> / <span>Tentang Kami</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-[#0B2D39] mb-6">Sejarah Singkat</h2>
+                <div class="prose text-gray-600 leading-relaxed text-justify">
+                    <p class="mb-4">
+                        Pendirian Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Tanjungpura dipelopori oleh Rektor UNTAN periode 1982-1991 (Prof. Dr. H. Hadari Nawawi) dan diawali dengan dibentuknya Badan Pengelola Matematika dan Ilmu Pengetahuan Alam (BP. MIPA) Untan pada tahun 1992 berdasarkan Surat Keputusan Rektor Universitas Tanjungpura Nomor: 4669/PT29.H/E/1992, tanggal 26 November 1992.
+                    </p>
+                    <p>
+                        Pada tahun 1999 berdasarkan Surat Keputusan Rektor Universitas Tanjungpura nomor: 193a/J22/KP/1999, tanggal 1 April 1999 diadakan penggantian pengurus BPMIPA sekaligus mengganti nama Badan Pengelola Matematika dan Ilmu Pengetahuan Alam (BPMIPA) menjadi Fakultas Matematika dan Ilmu Pengetahuan Alam (FMIPA).
+                    </p>
+                </div>
+            </div>
+            
+            <div class="relative">
+                <div class="rounded-xl overflow-hidden shadow-2xl transform rotate-2 hover:rotate-0 transition duration-500">
+                    <img src="material/hero.jpg" alt="Sejarah FMIPA UNTAN" class="w-full h-auto object-cover grayscale hover:grayscale-0 transition duration-500">
+                </div>
+                <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-yellow-400 rounded-lg -z-10"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-50 py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="bg-white p-10 rounded-xl shadow-md border-t-8 border-[#0B2D39] text-center mb-10 max-w-4xl mx-auto">
+                <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center text-3xl mb-6 mx-auto">
+                    👁️
+                </div>
+                <h3 class="text-2xl font-bold text-[#0B2D39] mb-4 uppercase tracking-wide">Visi</h3>
+                <p class="italic text-gray-700 text-xl leading-relaxed">
+                    “Menjadi institusi unggul dalam tranformasi, pengembangan dan penyebarluasan sains dan teknologi berbasis lingkungan tropis dengan luaran berdaya saing global.”
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <div class="bg-white p-8 rounded-xl shadow-md border-t-8 border-yellow-400 h-full">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-[#0B2D39]/10 rounded-full flex items-center justify-center text-2xl">
+                            🚀
+                        </div>
+                        <h3 class="text-2xl font-bold text-[#0B2D39]">Misi</h3>
+                    </div>
+                    <ol class="space-y-4 text-gray-700 list-decimal list-outside pl-5 text-justify">
+                        <li>Menyelenggarakan aktivitas Pendidikan Tinggi secara terpadu untuk menghasilkan luaran berkualitas yang adaptif terhadap pengembangan sains dan teknologi dengan tetap memegang teguh jati diri bangsa.</li>
+                        <li>Melaksanakan aktivitas riset yang terarah, berkesinambungan, dan berwawasan lingkungan dengan berorientasi pada pengembangan potensi lokal Kalimantan Barat.</li>
+                        <li>Melakukan kegiatan Pengabdian yang berdampak bagi peningkatan kualitas lingkungan dan kesejahteraan masyarakat.</li>
+                    </ol>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md border-t-8 border-[#7A2E2E] h-full">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-[#7A2E2E]/10 rounded-full flex items-center justify-center text-2xl">
+                            🎯
+                        </div>
+                        <h3 class="text-2xl font-bold text-[#0B2D39]">Tujuan</h3>
+                    </div>
+                    <ol class="space-y-4 text-gray-700 list-decimal list-outside pl-5 text-justify">
+                        <li>Memberikan bekal konsep ilmu dasar dan terapannya melalui proses pendidikan tinggi dan penelitian yang inovatif dan kreatif.</li>
+                        <li>Mengembangkan dan memanfaatkan ilmu dasar dan terapannya secara mandiri dan bersinergi dengan ilmu-ilmu lain yang terkait menuju peningkatan nilai tambah yang kompetitif dan kualitas sumber daya manusia.</li>
+                        <li>Memberi solusi terhadap permasalahan di masyarakat yang berkaitan dengan bidang ilmu MIPA.</li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 py-20 text-center">
+        <h2 class="text-3xl font-bold text-[#0B2D39] mb-2">Pimpinan Fakultas</h2>
+        <div class="w-20 h-1 bg-yellow-400 mx-auto mb-12"></div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="group">
+                <div class="bg-gray-200 rounded-xl overflow-hidden mb-4 relative h-80 w-full">
+                   <img src="material/dekan2.png" alt="Dekan" class="w-full h-full object-cover object-top"> 
+                </div>
+                <h4 class="font-bold text-lg text-[#0B2D39]">Prof. Dr. Gusrizal, S.Si., M.Si.</h4>
+                <p class="text-sm text-gray-500 uppercase">Dekan Fakultas</p>
+            </div>
+
+            <div class="group">
+                <div class="bg-gray-200 rounded-xl overflow-hidden mb-4 relative h-80 w-full">
+                    <img src="material/wakdek1.png" alt="Wakil Dekan 1" class="w-full h-full object-cover object-top hover:scale-105 transition duration-500">
+                </div>
+                <h4 class="font-bold text-lg text-[#0B2D39]">Yudha Arman, S.Si., M.Si., D.Sc.</h4>
+                <p class="text-sm text-gray-500 uppercase">Wakil Dekan I<br>(Akademik)</p>
+            </div>
+
+            <div class="group">
+                <div class="bg-gray-200 rounded-xl overflow-hidden mb-4 relative h-80 w-full">
+                    <img src="material/wakdek2.png" alt="Wakil Dekan 2" class="w-full h-full object-cover object-top hover:scale-105 transition duration-500">
+                </div>
+                <h4 class="font-bold text-lg text-[#0B2D39]">Dr. Evi Noviani, S.Si., M.Si.</h4>
+                <p class="text-sm text-gray-500 uppercase">Wakil Dekan II<br>(Umum dan Keuangan)</p>
+            </div>
+
+            <div class="group">
+                <div class="bg-gray-200 rounded-xl overflow-hidden mb-4 relative h-80 w-full">
+                    <img src="material/wakdek3.png" alt="Wakil Dekan 3" class="w-full h-full object-cover object-top hover:scale-105 transition duration-500">
+                </div>
+                <h4 class="font-bold text-lg text-[#0B2D39]">Tedy Rismawan, S.Kom., M.Cs.</h4>
+                <p class="text-sm text-gray-500 uppercase">Wakil Dekan III<br>(Kemahasiswaan dan Alumni)</p>
+            </div>
+
+        </div>
+    </section>
+
+  </main>
+
+  <footer id="kontak" class="dark-footer mt-12">
+    <div class="w-full max-w-[95%] mx-auto px-6 md:px-12 py-12">
+      <div class="footer-grid">
+        
+        <div class="footer-left">
+          <div class="logo-container mb-6 inline-block bg-white py-2 px-4 rounded-full">
+             <img src="material/logo_untan.png" alt="Logo FMIPA UNTAN" class="h-12 w-auto object-contain">
+          </div>
+          <div class="contact-info space-y-3 text-sm">
+            <p class="leading-relaxed text-gray-400">JL. Prof. Dr. H. Hadari Nawawi – Kode Pos: 78124</p>
+            <div class="flex items-center gap-3 text-gray-300"><span class="text-yellow-400">📞</span> <span>(0561) 577963</span></div>
+            <div class="flex items-center gap-3 text-gray-300"><span class="text-yellow-400">✉️</span> <a href="mailto:info@fmipa.untan.ac.id" class="hover:text-white">info@fmipa.untan.ac.id</a></div>
+            <div class="flex items-center gap-3 text-gray-300"><span class="text-yellow-400">🌐</span> <a href="https://mipa.untan.ac.id" class="hover:text-white">mipa.untan.ac.id</a></div>
+          </div>
+        </div>
+  
+        <div class="footer-links">
+          <h4 class="flex items-center gap-2 text-lg font-semibold text-white mb-6"><span class="text-yellow-400">🔗</span> Link Terkait</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="#" class="hover:text-yellow-400 transition-colors">Universitas Tanjungpura</a></li>
+            <li><a href="#" class="hover:text-yellow-400 transition-colors">Website Jurusan Biologi</a></li>
+            <li><a href="#" class="hover:text-yellow-400 transition-colors">Website Jurusan Kimia</a></li>
+            <li><a href="#" class="hover:text-yellow-400 transition-colors">Website Prodi Matematika</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-map">
+          <h4 class="flex items-center gap-2 text-lg font-semibold text-white mb-6"><span class="text-yellow-400">📍</span> Peta Lokasi Fakultas MIPA</h4>
+          <div class="map-wrap rounded-lg overflow-hidden border-2 border-gray-700">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15959.04343668402!2d109.345159!3d-0.058269!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d599bd43605f1%3A0x533c860224e39150!2sFakultas%20Matematika%20dan%20Ilmu%20Pengetahuan%20Alam%20Universitas%20Tanjungpura!5e0!3m2!1sid!2sid!4v1700000000000" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div> 
+    </div> 
+  
+    <div class="bg-[#131419] py-4 border-t border-gray-800">
+      <div class="w-full max-w-[95%] mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+         <div>© <span id="year"></span> FMIPA UNTAN. All rights reserved.</div>
+         <div class="mt-2 md:mt-0 space-x-4">
+           <a href="#" class="hover:text-white">Sitemap</a>
+           <a href="#" class="hover:text-white">Kebijakan Privasi</a>
+         </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
